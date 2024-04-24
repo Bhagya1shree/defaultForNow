@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Accounts and Related Contacts" icon-name="standard:account">
+      <lightning-tree-grid 
+      key-field="Id"
+      columns={gridColumn}
+      data={gridData}
+      onrowselection={handleRowSelection}
+      >
+      </lightning-tree-grid>
+    </lightning-card>
+</template>

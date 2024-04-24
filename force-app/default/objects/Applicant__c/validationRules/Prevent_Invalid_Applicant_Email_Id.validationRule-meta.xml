@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Invalid_Applicant_Email_Id</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(Email_Id__c)) &amp;&amp; 
+NOT(REGEX(Email_Id__c, &quot;^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$&quot;))</errorConditionFormula>
+    <errorDisplayField>Email_Id__c</errorDisplayField>
+    <errorMessage>Email Id is invalid...............................</errorMessage>
+</ValidationRule>

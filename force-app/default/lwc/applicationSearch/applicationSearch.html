@@ -1,0 +1,17 @@
+<template>
+      <lightning-card icon-name="standard:account" variant="base" title="Creation Dates">
+        <p>Agent Name: {agentName}</p>
+        <lightning-input type="date" label="From Date" value={fromDate} onchange={handleFromDateChange}></lightning-input>
+        <lightning-input type="date" label="To Date" value={toDate} onchange={handleToDateChange}></lightning-input>
+        <lightning-button label="Show Popup" variant="Brand" onclick={showPopupModalHandler}></lightning-button>
+          
+        
+        <!--Calling popup modal compo-->
+        <template if:true={showPopupModalFlag}> 
+        
+
+          <c-applicant-data-table-compo onpopupevent = {receivedPopupModalDataHandler} from-date={fromDate} to-date = {toDate} popup-list = {data} ></c-applicant-data-table-compo>
+        </template>     
+
+    </lightning-card>     
+</template>

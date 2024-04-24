@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Male_Applicant</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Gender__c , &apos;Male&apos;)</errorConditionFormula>
+    <errorMessage>Applicants with Male Gender not allowed</errorMessage>
+</ValidationRule>

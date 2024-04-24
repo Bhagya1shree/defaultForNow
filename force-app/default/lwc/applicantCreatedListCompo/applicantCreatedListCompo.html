@@ -1,0 +1,18 @@
+<template>
+<lightning-card title="Applicant Record"><BR/>
+    Selected Records ={selectedRecordCount}<BR/>
+   <lightning-button 
+     variant="destructive"
+     label="Delete Selected Records" 
+     icon-name="utility:delete"
+     onclick={deleteButtonHandler} 
+   ></lightning-button><BR/>
+   <lightning-input 
+    data-formfeild="appLicantname"
+     type="text"
+     label="Enter Applicant Id"
+     onkeyup={showRecords}
+   ></lightning-input><BR/>
+
+</lightning-card>
+</template>

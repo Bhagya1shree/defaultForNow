@@ -1,0 +1,39 @@
+<template>
+    <lightning-card title = "Date Range" >
+        <p>Agent Name: {agentName}</p>
+        <lightning-input type="date" data-formfield="fromDate" label="Select From Date"></lightning-input><br/>
+        <lightning-input type="date" data-formfield="toDate" label="Select To Date" onblur={searchApplicantHandler}></lightning-input><br/>
+    
+
+       <template if:true={showTableFlag}>
+        <table class="slds-table slds-table--bordered slds-table--striped">
+            <thead>
+                <tr>
+                    <th scope="col"><span class="slds-truncate" >Applicant ID </span></th>
+                    <th scope="col"><span class="slds-truncate">First Name</span></th>
+                    <th scope="col"><span class="slds-truncate">Last Name</span></th>
+                    <th scope="col"><span class="slds-truncate">Created Date</span></th>
+                    <th scope="col"><span class="slds-truncate">Created By</span></th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                    <template for:each={appList} for:item="objApp">
+                            <tr key={objApp.id}>
+                                  <td> {objApp.Name}</td>
+                                  <td>{objApp.First_Name__c} </td>
+                                  <td>{objApp.Last_Name__c} </td>
+                                  <td>{objApp.CreatedDate} </td>
+                                  <td>{objApp.CreatedBy.Name} </td>
+                                        
+                            </tr>
+    
+                       </template>            
+            </tbody>
+    </table>
+       </template>
+<template if:true= {showPopupModalFlag}>
+       <c-applicant-data-table-compo onpopupevent = {earchApplicantDateRecords} popup-list={appList} from-date={fromDate} to-date={toDate}></c-applicant-data-table-compo>
+    </template>
+    </lightning-card>
+</template>

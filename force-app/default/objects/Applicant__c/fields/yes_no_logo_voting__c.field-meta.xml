@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>yes_no_logo_voting__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Age__c  &gt;= 18, 
+
+
+ IMAGE(&apos;https://airtel74-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0152t000000Rk5j&amp;oid=00D2t000000fXWZ&amp;lastMod=1689412756000&apos;
+, 
+
+&apos;yes &apos;, 50, 50) , 
+
+
+
+
+
+ IMAGE(&apos;https://airtel74-dev-ed.develop.my.salesforce.com/0152t000000Rk5o&apos;, 
+
+&apos;no &apos;, 50, 50) 
+
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>yes no logo voting</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

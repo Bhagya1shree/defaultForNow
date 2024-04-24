@@ -1,0 +1,59 @@
+<template>
+    <lightning-card title = "Table">
+            Selected records= {selectedRecordsCount}<br/>
+
+            <lightning-button
+            variant="destructive"
+            icon-name ="utility:delete"
+            onclick="deleteButtonHandler">
+
+            </lightning-button>
+
+            <lightning-input 
+              type="search"
+              label="applicantFirstname"
+              onkeyup={searchRecords}
+            ></lightning-input>
+
+            <template if:true={showFlag}>
+
+                <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+              ></lightning-datatable>
+            </template>
+         
+
+
+
+
+
+
+    </lightning-card>
+    
+</template>
+
+
+import {LightningElement} from 'lwc';
+
+const columns= [{Label: "ApplicantId" ,feildname: "Name" type:text},
+{ Label: feildname:"Type" type:}
+,{Label: feildname:"Rating" type:},
+{Label: feildname:"Industry" type:}
+];
+
+export default class newCompo extends 'LightningElement';
+
+search records(){
+
+
+
+}
+
+deleteButtonHandler(){
+
+
+
+    
+}

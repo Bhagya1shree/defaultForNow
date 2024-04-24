@@ -1,0 +1,18 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 09-13-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Search Applicant">
+        <lightning-input type="text" data-formfield="applicantName" label="Enter Applicant ID" ></lightning-input> <BR/>
+        <lightning-button variant="brand" label="Search" onclick={handleSearchButton}></lightning-button> <br/>
+
+        First Name = {applicantObject.First_Name__c} <br />
+        Last Name = {applicantObject.Last_Name__c} <br />
+        Gender = {applicantObject.Gender__c} <br/>
+    
+    </lightning-card>
+</template>

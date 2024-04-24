@@ -1,0 +1,39 @@
+<template>
+<lightning-card>
+<lightning-input type="date" data-formfield="fromDate" label="Select From 
+Date"></lightning-input><br/>
+<lightning-input type="date" data-formfield="toDate" label="Select To Date"
+></lightning-input><br/>
+<lightning-button 
+  variant="success"
+  label="Search" 
+  onclick={showDataTableWithPopup} 
+></lightning-button>
+
+<template if:true={showPopupFlag}>
+<table class="slds-table slds-table--bordered slds-table--striped">
+<thead>
+<tr>
+<th scope="col"><span class="slds-truncate" >Applicant ID </span></th>
+<th scope="col"><span class="slds-truncate">First Name</span></th>
+<th scope="col"><span class="slds-truncate">Last Name</span></th>
+<th scope="col"><span class="slds-truncate">Created Date</span></th>
+<th scope="col"><span class="slds-truncate">Created By</span></th>
+</tr>
+</thead>
+<tbody>
+<template for:each={appList} for:item="objApp">
+<tr key={objApp.id}>
+<td> {objApp.Name}</td>
+<td>{objApp.First_Name__c} </td>
+<td>{objApp.Last_Name_del__c} </td>
+<td>{objApp.CreatedDate} </td>
+<td>{objApp.CreatedBy.Name} </td>
+</tr>
+</template>
+</tbody>
+</table>
+</template>
+
+</lightning-card>
+</template>

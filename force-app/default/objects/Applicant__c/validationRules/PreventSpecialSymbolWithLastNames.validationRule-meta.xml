@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PreventSpecialSymbolWithLastNames</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX (Last_Name__c, &quot;^[a-zA-Z0-9_]*$&quot;))</errorConditionFormula>
+    <errorDisplayField>Last_Name__c</errorDisplayField>
+    <errorMessage>Prevent special  symbol................................</errorMessage>
+</ValidationRule>

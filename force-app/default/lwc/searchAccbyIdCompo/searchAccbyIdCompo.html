@@ -1,0 +1,16 @@
+<template>
+        <lightning-card title="Account Search">
+            <div class="slds-p-around_medium">
+                <lightning-input label="Enter Account ID" value={accountId} onchange={handleInputChange}></lightning-input>
+                <lightning-button label="Search" onclick={searchAccount} variant="brand"></lightning-button>
+            </div>
+            <div class="slds-p-around_medium">
+                <template if:true={accountName}>
+                    <p>Account Name: {accountName}</p>
+                </template>
+                <template if:false={accountName}>
+                    <p>No account found.</p>
+                </template>
+            </div>
+        </lightning-card>
+    </template>

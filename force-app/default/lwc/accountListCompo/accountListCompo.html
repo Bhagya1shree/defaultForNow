@@ -1,0 +1,15 @@
+<!-- displayCreatedDateAndAccountName.html -->
+<!-- displayMultipleAccounts.html -->
+<template>
+    <lightning-card title="Account Information">
+        <div class="slds-p-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={accounts}
+                columns={columns}
+                hide-checkbox-column="true">
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gender_logo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISPICKVAL(Gender__c,&quot;Male&quot;),(IMAGE(&apos;https://airtel74-dev-ed.develop.my.salesforce.com/0152t000000Rkms&apos;, &apos;male&apos;, 30, 30)),
+IF(ISPICKVAL(Gender__c, &quot;Female&quot;),  IMAGE( &apos;https://airtel74-dev-ed.develop.file.force.com/servlet/servlet.ImageServer?id=0152t000000Rkmx&amp;oid=00D2t000000fXWZ&amp;lastMod=1689563710000&apos; , &apos;fem&apos;, 30, 30 ), IMAGE(&apos;https://airtel74-dev-ed.develop.my.salesforce.com/0152t000000Rkn7&apos;, &apos;tgen&apos;, 30, 30
+)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>gender logo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

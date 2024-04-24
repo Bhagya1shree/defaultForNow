@@ -1,0 +1,42 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 09-13-2023
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+<lightning-card title="CRUD Operation">
+<lightning-button variant="brand" 
+icon-name="utility:record_create" 
+label="Create" 
+onclick={createButtonHandler}>
+
+</lightning-button>
+<lightning-button variant="success" 
+icon-name="utility:search" 
+label="Search" 
+onclick={searchButtonHandler}>
+
+</lightning-button>
+<lightning-button variant="neutral" 
+icon-name="utility:record_update" 
+label="Update" 
+onclick={updateButtonHandler}>
+
+</lightning-button>
+<lightning-button variant="destructive" 
+icon-name="utility:delete" 
+label="Delete" 
+onclick={deleteButtonHandler}>
+
+</lightning-button>
+<lightning-input
+    type="text"
+    label="Enter CRUD Record"
+    data-formfeild="Enter record">
+
+</lightning-input>
+
+</lightning-card>
+</template>

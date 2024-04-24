@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <description>Ahmadnagar
+Akola
+Amravati
+Aurangabad
+Bhandara
+Bhusawal
+Bid
+Buldhana
+Chandrapur
+Daulatabad
+Dhule
+Jalgaon
+Kalyan
+Karli
+Kolhapur
+Mahabaleshwar
+Malegaon
+Matheran
+Mumbai
+Nagpur
+Nanded
+Nashik
+Osmanabad
+Pandharpur
+Parbhani
+Pune
+Ratnagiri
+Sangli
+Satara
+Sevagram
+Solapur
+Thane
+Ulhasnagar
+Vasai-Virar
+Wardha
+Yavatmal</description>
+    <externalId>false</externalId>
+    <label>City</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ahmadnagar</fullName>
+                <default>false</default>
+                <label>Ahmadnagar</label>
+            </value>
+            <value>
+                <fullName>Akola</fullName>
+                <default>false</default>
+                <label>Akola</label>
+            </value>
+            <value>
+                <fullName>Amravati</fullName>
+                <default>false</default>
+                <label>Amravati</label>
+            </value>
+            <value>
+                <fullName>Aurangabad</fullName>
+                <default>false</default>
+                <label>Aurangabad</label>
+            </value>
+            <value>
+                <fullName>Bhandara</fullName>
+                <default>false</default>
+                <label>Bhandara</label>
+            </value>
+            <value>
+                <fullName>Bhusawal</fullName>
+                <default>false</default>
+                <label>Bhusawal</label>
+            </value>
+            <value>
+                <fullName>Bid</fullName>
+                <default>false</default>
+                <label>Bid</label>
+            </value>
+            <value>
+                <fullName>Buldhana</fullName>
+                <default>false</default>
+                <label>Buldhana</label>
+            </value>
+            <value>
+                <fullName>Chandrapur</fullName>
+                <default>false</default>
+                <label>Chandrapur</label>
+            </value>
+            <value>
+                <fullName>Daulatabad</fullName>
+                <default>false</default>
+                <label>Daulatabad</label>
+            </value>
+            <value>
+                <fullName>Dhule</fullName>
+                <default>false</default>
+                <label>Dhule</label>
+            </value>
+            <value>
+                <fullName>Jalgaon</fullName>
+                <default>false</default>
+                <label>Jalgaon</label>
+            </value>
+            <value>
+                <fullName>Kalyan</fullName>
+                <default>false</default>
+                <label>Kalyan</label>
+            </value>
+            <value>
+                <fullName>Karli</fullName>
+                <default>false</default>
+                <label>Karli</label>
+            </value>
+            <value>
+                <fullName>Kolhapur</fullName>
+                <default>false</default>
+                <label>Kolhapur</label>
+            </value>
+            <value>
+                <fullName>Mahabaleshwar</fullName>
+                <default>false</default>
+                <label>Mahabaleshwar</label>
+            </value>
+            <value>
+                <fullName>Malegaon</fullName>
+                <default>false</default>
+                <label>Malegaon</label>
+            </value>
+            <value>
+                <fullName>Matheran</fullName>
+                <default>false</default>
+                <label>Matheran</label>
+            </value>
+            <value>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+                <label>Mumbai</label>
+            </value>
+            <value>
+                <fullName>Nagpur</fullName>
+                <default>false</default>
+                <label>Nagpur</label>
+            </value>
+            <value>
+                <fullName>Nanded</fullName>
+                <default>false</default>
+                <label>Nanded</label>
+            </value>
+            <value>
+                <fullName>Nashik</fullName>
+                <default>false</default>
+                <label>Nashik</label>
+            </value>
+            <value>
+                <fullName>Osmanabad</fullName>
+                <default>false</default>
+                <label>Osmanabad</label>
+            </value>
+            <value>
+                <fullName>Pandharpur</fullName>
+                <default>false</default>
+                <label>Pandharpur</label>
+            </value>
+            <value>
+                <fullName>Parbhani</fullName>
+                <default>false</default>
+                <label>Parbhani</label>
+            </value>
+            <value>
+                <fullName>Pune</fullName>
+                <default>false</default>
+                <label>Pune</label>
+            </value>
+            <value>
+                <fullName>Ratnagiri</fullName>
+                <default>false</default>
+                <label>Ratnagiri</label>
+            </value>
+            <value>
+                <fullName>Sangli</fullName>
+                <default>false</default>
+                <label>Sangli</label>
+            </value>
+            <value>
+                <fullName>Satara</fullName>
+                <default>false</default>
+                <label>Satara</label>
+            </value>
+            <value>
+                <fullName>Sevagram</fullName>
+                <default>false</default>
+                <label>Sevagram</label>
+            </value>
+            <value>
+                <fullName>Solapur</fullName>
+                <default>false</default>
+                <label>Solapur</label>
+            </value>
+            <value>
+                <fullName>Thane</fullName>
+                <default>false</default>
+                <label>Thane</label>
+            </value>
+            <value>
+                <fullName>Ulhasnagar</fullName>
+                <default>false</default>
+                <label>Ulhasnagar</label>
+            </value>
+            <value>
+                <fullName>Vasai-Virar</fullName>
+                <default>false</default>
+                <label>Vasai-Virar</label>
+            </value>
+            <value>
+                <fullName>Wardha</fullName>
+                <default>false</default>
+                <label>Wardha</label>
+            </value>
+            <value>
+                <fullName>Yavatmal</fullName>
+                <default>false</default>
+                <label>Yavatmal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
