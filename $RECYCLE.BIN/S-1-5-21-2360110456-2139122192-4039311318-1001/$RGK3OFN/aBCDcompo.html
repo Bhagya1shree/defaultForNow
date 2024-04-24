@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Verify Email Form" icon-name="standard:account" variant="base">
+        <lightning-input-name
+            label="Enter Name"
+            first-name={fName}
+            last-name={lName}
+            salutation="Mr."
+            options={salutationOptions}
+            onchange={handleNameChange} 
+        ></lightning-input-name>
+        <lightning-input
+            type="email"
+            label="Email"
+            value={email}
+            pattern=".+@gmail.com"
+            placeholder="username@gmail.com"
+            maxlength="50"
+            onchange={handleEmailChange}
+        >
+        </lightning-input>
+        <lightning-button label="Verify Email" variant="brand" onclick={handleVerifyEmail}></lightning-button>
+        <lightning-input
+            label="Enter OTP"
+            value={otp}
+            onchange={handleOtpChange}
+        ></lightning-input>
+    </lightning-card>
+</template>
